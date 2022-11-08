@@ -1,0 +1,27 @@
+### SHOWS ALL USERS DATA
+GET  http://localhost:3000/users 
+### SHOWS ONE USERS DATA
+GET http://localhost:3000/users/1 
+### USER CREATES OWN USER
+POST  http://localhost:3000/users 
+Content-Type: application/json
+
+{
+  "first_name": "Jon",
+  "last_name": "Jonson",
+  "email": "Jon@gmail.com"
+}
+
+
+### USER UPDATES USER
+PATCH http://localhost:3000/users/2 
+Content-Type: application/json
+
+{
+"first_name": "Joe"
+}
+
+
+### USER DELETES USER 
+
+DELETE  http://localhost:3000/users/2 
